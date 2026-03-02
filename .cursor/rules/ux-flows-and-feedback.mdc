@@ -1,0 +1,47 @@
+---
+description: UX flow, system status, and feedback patterns for user journeys and interactions.
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# UX Flows and Feedback
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when designing or modifying flows (onboarding, checkout, configuration, CRUD flows, etc.) and the feedback they provide.
+
+## Core Flow Principles
+
+- Follow **Nielsen’s 10 heuristics**, especially:
+  - **Visibility of system status** – the user should always know what is happening.
+  - **Match with real-world conventions** – flows should mirror user expectations and domain workflows.
+  - **Error prevention and recovery** – prevent problems where possible and give clear recovery steps.
+- Align flows with users’ **mental models**:
+  - Example: cart → review → checkout → confirmation.
+  - Avoid surprising orderings (for example, asking for payment before showing what will be purchased).
+
+## Progressive Disclosure
+
+- Break complex flows into **clear, labeled steps** instead of a single overloaded screen.
+- At each step, clearly show:
+  - Where the user is now.
+  - What they just completed.
+  - What happens next.
+- Hide advanced or rarely used options behind **well-labeled expanders or secondary views**, not behind unlabeled icons.
+
+## System Status and Feedback
+
+- For actions that take noticeable time:
+  - Show **in-place loading indicators** (skeletons, spinners, progress bars) near the affected content.
+  - Keep users informed of progress (for example, “Uploading 2 of 5 files…”).
+- On success:
+  - Confirm what changed using clear language and, when appropriate, visual change (updated list, badge, etc.).
+- On error:
+  - Explain **what went wrong**, **what was affected**, and **what the user can do now**.
+
+## Anti-patterns
+
+- Do **not** navigate away or reset state without confirming when the user has unsaved changes or is in a multi-step flow.
+- Do **not** hide critical feedback in ephemeral toasts when it directly affects a specific element or section.
+- Do **not** overload a single screen with many unrelated actions; prefer focused, stepwise flows.
+

@@ -1,0 +1,54 @@
+---
+description: UX writing and microcopy patterns for labels, messages, and in-product text.
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# UX Writing and Microcopy
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when naming actions, writing messages, or shaping any in-product copy.
+
+## Voice and Tone
+
+- Aim for **clear, direct, and human** language.
+- Prefer:
+  - **Plain language** over jargon.
+  - **Active voice** (“Save changes”) over passive (“Changes will be saved”).
+  - **Present tense** where possible.
+- Adjust tone, not clarity:
+  - Calm and neutral for routine actions.
+  - Supportive but honest for errors and high-stakes flows.
+
+If project-specific guidelines exist (for example, `design/content/voice-and-tone.*`), follow them as the source of truth.
+
+## Labels and Actions
+
+- Make button and link labels **describe the action**:
+  - Good: “Send invite”, “Download report”.
+  - Weak: “Submit”, “OK”.
+- Avoid duplicate primary actions on a single screen; one obvious primary per context.
+- Use consistent terminology across the product for the same concepts.
+
+## Messages and Errors
+
+- For confirmations and successes:
+  - State **what happened** and **what the user can do next**.
+- For errors:
+  - Explain **what went wrong**, in human terms.
+  - Suggest a **next step** or workaround when possible.
+- Avoid alarming language unless truly necessary; be precise rather than dramatic.
+
+## Inclusive and Accessible Language
+
+- Avoid idioms, metaphors, or jokes that may not translate across cultures.
+- Use **people-first language** where applicable and avoid stigmatizing terms.
+- Ensure copy works well when read aloud by screen readers; short sentences and clear structure help.
+
+## Anti-patterns
+
+- Do **not** rely on generic text such as “Error occurred” without context.
+- Do **not** cram multiple, unrelated ideas into a single long sentence.
+- Do **not** change terminology for the same concept within a single flow.
+

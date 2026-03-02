@@ -1,0 +1,46 @@
+---
+description: Use when working on authentication, authorization, account security, or other security-sensitive UX flows. Covers secure sign-in, recovery, permission UI, and security messaging.
+alwaysApply: false
+---
+
+# Security UX Patterns (Agent-Requested)
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this binder when you are implementing or modifying auth flows, permissions, account recovery, or any security-sensitive UI.
+
+## Secure Sign-in and Recovery
+
+- Make it clear **where** users are signing in (product, environment, or tenant) and what they are signing into.
+- Provide **predictable, reversible flows** for:
+  - Sign in and sign out.
+  - Password reset and account recovery.
+  - Multi-factor authentication (MFA) enrollment and verification.
+- Avoid exposing sensitive information in error messages:
+  - Do not disclose whether a specific email or username exists.
+  - Use neutral phrasing such as “If an account exists, we’ll send instructions…”.
+
+## Permissions and Roles
+
+- Present permissions in **human-readable terms** focused on what the user can do, not technical flags.
+- Use clear, consistent language for role names and capabilities.
+- When changing access levels:
+  - Explain **what will change** for affected users.
+  - Highlight any **destructive or irreversible** consequences.
+
+## Security Messaging
+
+- Keep security-related copy:
+  - **Specific** – what is at risk or being protected.
+  - **Actionable** – what users should do now.
+  - **Reassuring but honest** – no false guarantees.
+- For suspicious activity or unusual sign-ins:
+  - Clearly indicate what happened.
+  - Provide a clear next step (for example, “Secure your account” with a guided flow).
+
+## Anti-patterns
+
+- Do **not** leak sensitive account existence or internal error details in user-facing messages.
+- Do **not** make security flows so strict or confusing that users cannot complete essential tasks.
+- Do **not** mix security-critical actions (like deleting an account) with routine settings in a way that hides risk.
+

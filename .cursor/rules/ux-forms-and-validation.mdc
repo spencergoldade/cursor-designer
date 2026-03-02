@@ -1,0 +1,40 @@
+---
+description: Form, validation, and error handling patterns focused on clarity and recovery.
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# UX Forms and Validation
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when designing or updating forms, wizards, and input-heavy flows.
+
+## Validation Strategy
+
+- Prefer **inline validation** that appears near the relevant field, especially for format and required-field issues.
+- Use **on-submit validation** for cross-field rules and business logic that cannot be checked per-field.
+- Do not block users with a wall of errors; prioritize **most critical issues first** and help them fix issues one at a time.
+
+## Error Messaging
+
+- Make error messages:
+  - **Human-readable** – avoid raw validation codes or internal error text.
+  - **Specific** – state what is wrong and how to fix it (“Use at least 8 characters, including one number”).
+  - **Contextual** – attach errors to fields or regions rather than only showing a global message.
+- Where possible, **preserve user input** and pre-fill fields when retrying to prevent rework.
+
+## Form Layout and Flow
+
+- Group related fields into clear sections with headings and helper text when needed.
+- For long forms, consider:
+  - **Multi-step flows** with visible progress and the ability to go back.
+  - Saving progress or drafts when failure or interruption is likely.
+- Ensure primary and secondary actions are clearly labeled and consistently placed (for example, primary on the right, secondary on the left).
+
+## Anti-patterns
+
+- Do **not** clear the entire form when a single field fails validation.
+- Do **not** rely solely on red color or subtle icons to communicate errors; pair with descriptive text.
+- Do **not** hide mandatory fields or requirements until after users encounter errors; state key requirements upfront.
+

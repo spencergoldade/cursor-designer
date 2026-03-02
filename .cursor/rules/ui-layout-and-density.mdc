@@ -1,0 +1,47 @@
+---
+description: Layout, spacing, and responsive density patterns for frontend views and components.
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# UI Layout and Density
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when working on view or component layout (React/TSX, or equivalent in your stack).
+For other frameworks (Vue, Svelte, etc.), mirror these principles in your own layout primitives and update the `globs` accordingly.
+
+## Purpose
+
+Help Cursor create layouts that are clear, breathable, and responsive without inventing ad-hoc spacing or breakpoints.
+
+## Core Layout Principles
+
+- Prefer **simple, composable layout primitives** (stack, grid, cluster) over deeply nested arbitrary containers.
+- Keep **primary content first** in the DOM and visual hierarchy; avoid burying the main task in side panels or accordions.
+- Maintain a clear **reading order** that matches the visual order, especially for screen readers.
+
+## Spacing and Density
+
+- Use a **token-based spacing scale** (for example, `spacing-1, spacing-2, spacing-3`) rather than arbitrary pixel values.
+- Maintain consistent vertical rhythm:
+  - Larger spacing between sections than between items inside a section.
+  - Group related controls visually and with consistent spacing.
+- Avoid extremes:
+  - **Too tight**: cramped UIs that make scanning and tapping difficult.
+  - **Too loose**: excessive whitespace that forces unnecessary scrolling.
+
+## Responsive Behavior
+
+- Define behavior for at least three viewport ranges (for example: narrow, medium, wide).
+- On smaller screens:
+  - Collapse multi-column layouts into a single column where possible.
+  - Keep primary actions visible without requiring horizontal scrolling.
+- Avoid fixed widths that break on narrow screens; prefer max-widths with fluid widths inside.
+
+## Anti-patterns
+
+- Do **not** stack unrelated blocks with identical spacing and no headings; this flattens hierarchy.
+- Do **not** rely on invisible layout hacks (for example, `margin-left` offsets) when a layout primitive (grid/flex) is more appropriate.
+- Do **not** add arbitrary, one-off spacing values that diverge from the project’s tokens unless explicitly requested for a special case.
+

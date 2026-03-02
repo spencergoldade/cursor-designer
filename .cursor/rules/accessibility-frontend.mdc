@@ -1,0 +1,52 @@
+---
+description: Frontend accessibility patterns for interactive components, structure, and focus.
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# Accessibility – Frontend
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when working on frontend components or views that users interact with via mouse, touch, or keyboard.
+
+## Core Accessibility Targets
+
+- Aim for **WCAG 2.1 AA or better** by default.
+- Treat accessibility as a **first-class requirement**, not an optional enhancement.
+
+## Structure and Semantics
+
+- Use **semantic HTML** wherever possible (buttons for actions, links for navigation, headings for structure).
+- Maintain a logical **heading hierarchy** (`h1` → `h2` → `h3`) that matches visual hierarchy.
+- Use **landmarks** (for example, main, nav, header, footer) to help screen reader users navigate.
+
+## ARIA and Interactive Elements
+
+- Apply **ARIA roles, states, and properties** only when native semantics are insufficient.
+- For any custom interactive component (for example, dropdowns, modals, tabs), ensure:
+  - Correct role (for example, `role="dialog"`, `role="tablist"`).
+  - **Keyboard interaction patterns** consistent with platform expectations.
+  - Proper labeling via `aria-label`, `aria-labelledby`, or associated text.
+- Provide **alt text** for informative images; mark decorative images as ignored by assistive tech.
+
+## Focus and Keyboard Navigation
+
+- Ensure that all interactive elements are reachable via keyboard **in a logical order**.
+- Always provide a **visible focus state** that meets contrast requirements.
+- Prevent and fix **keyboard traps**; users must be able to move into and out of components (especially dialogs) using standard keys.
+- When opening modals or overlays:
+  - Move focus into the modal.
+  - Restore focus to a sensible element when the modal closes.
+
+## Color and Contrast
+
+- Use color tokens that maintain at least **AA-level contrast** for text and essential UI elements.
+- Do not rely solely on color to communicate state (error, success, disabled); pair with icons or text.
+
+## Anti-patterns
+
+- Do **not** hide focus outlines without providing an accessible alternative.
+- Do **not** implement custom components that only work with mouse or touch.
+- Do **not** use ARIA to “patch” semantics when a native element would accomplish the same goal more accessibly.
+

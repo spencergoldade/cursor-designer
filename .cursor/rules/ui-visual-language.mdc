@@ -1,0 +1,56 @@
+---
+description: Visual language patterns for color, typography, elevation, and iconography using design tokens.
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# UI Visual Language and Tokens
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when working on the visual styling of components and views: color, typography, elevation, borders, and icons.
+
+## Source of Truth
+
+- Treat project design docs as the **single source of truth** for visual decisions when available:
+  - `design/tokens/colors.*` – color tokens and semantic roles.
+  - `design/tokens/typography.*` – typography scale, line heights, and weights.
+  - `design/tokens/spacing.*` – spacing scales for layout and components.
+- When these files do not exist, propose **minimal starter tokens** and place them in these paths, then use them consistently.
+
+## Color Usage
+
+- Use **semantic color tokens** (for example, `color-bg-surface`, `color-fg-muted`, `color-border-critical`) instead of raw hex values.
+- Maintain sufficient **contrast** for text and key affordances (WCAG 2.1 AA or better).
+- Reserve high-chroma or brand colors for **primary actions and highlights**, not generic decoration.
+
+### NEVER: Auto-generated Decoration
+
+- **Never auto-generate gradients, generic shadows, or random color palettes.**
+- Only use **documented design tokens** for:
+  - Backgrounds and surfaces.
+  - Text and icons.
+  - Borders and elevation effects.
+
+## Typography
+
+- Use a **typography scale** with named roles (for example, `heading-xl`, `heading-m`, `body`, `caption`) instead of arbitrary font sizes.
+- Preserve clear **hierarchy**:
+  - Headings consistently larger and/or bolder than body text.
+  - Captions and metadata visually distinct but legible.
+- Avoid truncating important information; where truncation is unavoidable, provide a way to reveal full content (tooltip, expansion, detail view).
+
+## Elevation, Borders, and Icons
+
+- Use elevation (shadows, overlays) **sparingly** to signal layers (modals, floating panels) and interactive depth.
+- Prefer **subtle, token-based shadows** aligned with the system; avoid heavy or novel shadows for each component.
+- Keep icon usage:
+  - **Meaningful** – icons must reinforce the label, not replace it without context.
+  - **Consistent** – same icon for the same concept across the product.
+
+## Anti-patterns
+
+- Do **not** introduce new colors, fonts, or iconography families without referencing or extending tokens and docs.
+- Do **not** rely solely on color to convey state; pair with text, icons, or patterns accessible to all users.
+- Do **not** mix multiple visual languages (for example, divergent corner radii, shadows, or type scales) within a single flow without a strong justification.
+

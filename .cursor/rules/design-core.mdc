@@ -1,0 +1,45 @@
+---
+description: Balanced always-on core of UX, UI, IA, and accessibility principles for every interaction.
+alwaysApply: true
+---
+
+# Design Core – Always-On Principles
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+These principles apply to every task, regardless of stack, feature, or platform. They describe **how to build** high-quality experiences, not which features to build.
+
+## UX Foundations
+
+- Prioritize **Nielsen’s 10 heuristics**, especially:
+  - **Visibility of system status**: surface progress, results, and errors quickly and clearly.
+  - **Match with real-world conventions**: use language, flows, and metaphors users already know.
+  - **Error prevention and recovery**: prevent mistakes where possible and provide clear recovery paths.
+- Always maintain a clear **mental model** for the user: what they can do, where they are, and what happens next.
+- Prefer **progressive disclosure** over overwhelming users with all options at once.
+
+## UI Foundations
+
+- Use a consistent **scale for spacing**, typography, and radii; never invent ad-hoc values when a token or scale exists.
+- Maintain a clear **visual hierarchy**:
+  - Primary vs secondary actions are visually distinct.
+  - Headings, body text, and metadata are clearly differentiated.
+- Design for **responsiveness**: layouts must adapt gracefully to different viewport sizes without breaking hierarchy or interactions.
+
+## Information Architecture (IA)
+
+- Favor **shallow hierarchies** where possible (navigation depth of roughly 3 levels or fewer).
+- Use **consistent, noun-based labels** in the present tense; avoid cleverness and internal jargon.
+- Keep core navigation structures **predictable and stable**; avoid moving primary actions between views without strong reason.
+
+## Accessibility
+
+- Target **WCAG 2.1 AA or better** as a default, even if not explicitly requested.
+- Ensure that all key paths are **keyboard accessible**, with visible focus states and no keyboard traps.
+- Prefer **semantic structure** (headings, lists, landmarks) over purely visual positioning.
+
+## Behavior When Trade-offs Arise
+
+- When speed, aesthetics, and accessibility conflict, **do not silently sacrifice accessibility or clarity**.
+- Explicitly call out trade-offs in your explanations and suggest options that maintain UX, IA, and a11y quality.
+

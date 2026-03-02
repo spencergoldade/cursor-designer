@@ -1,0 +1,50 @@
+---
+description: Information architecture patterns for navigation, structure, and labeling.
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# IA – Navigation and Structure
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when designing navigation, menus, sitemaps, and content hierarchy.
+
+## IA Fundamentals
+
+- Favor **shallow hierarchies** over deep trees:
+  - Aim for navigation depth of roughly **three levels or fewer**.
+  - Group content by user mental models (tasks, domains, objects), not internal org charts.
+- Keep **core navigation stable** over time; avoid frequently moving or renaming primary sections.
+
+## Navigation Patterns
+
+- Provide a clear **“you are here”** indicator:
+  - Active state in nav.
+  - Breadcrumbs for deeper structures when helpful.
+- Use consistent patterns for:
+  - Global navigation (product-wide).
+  - Local navigation (within a section).
+  - Contextual navigation (links from relevant content).
+
+## Labeling
+
+- Use **concise, noun-based labels** in the present tense (for example, “Billing”, “Team members”, “Notifications”).
+- Avoid jargon and internal terminology when a user-facing equivalent exists.
+- Ensure labels are **consistent** across pages, navigation, headings, and action labels.
+
+## Design Docs
+
+- When available, consult IA docs such as:
+  - `design/ia/navigation.*` – sitemap, route groupings, and navigation rationale.
+- Follow those docs as the source of truth for:
+  - Which sections exist.
+  - How they relate.
+  - What names they use.
+
+## Anti-patterns
+
+- Do **not** create new top-level sections casually; first consider whether content belongs within an existing area.
+- Do **not** bury frequently used actions multiple clicks deep if they are part of core workflows.
+- Do **not** use different labels for the same concept in navigation, headings, and buttons.
+

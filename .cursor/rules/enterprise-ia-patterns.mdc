@@ -1,0 +1,48 @@
+---
+description: Use for complex, multi-product or multi-tenant IA. Covers cross-product navigation, deep hierarchies, account/org structures, and wayfinding at scale.
+alwaysApply: false
+---
+
+# Enterprise IA Patterns (Agent-Requested)
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this binder when designing IA for multi-product, multi-tenant, or large enterprise environments.
+
+## Multi-Level Structures
+
+- Clearly distinguish between:
+  - **Global level** – organization, workspace, or tenant.
+  - **Product level** – apps or modules within the organization.
+  - **Object level** – entities like projects, files, or resources.
+- Provide visible indicators of **which level** the user is operating at to avoid destructive mistakes in the wrong scope.
+
+## Cross-Product and Cross-Module Nav
+
+- Maintain a **stable global frame** (for example, top bar or side rail) that persists across products.
+- Use consistent patterns for:
+  - Switching organizations or workspaces.
+  - Switching products or modules.
+  - Moving between major sections inside a product.
+
+## Deep Hierarchies and Search
+
+- Avoid forcing users to traverse deep folder/section hierarchies for common tasks.
+- Provide:
+  - **Search and filtering** for large collections.
+  - Shortcuts or “recent” views for frequently accessed entities.
+  - Clear breadcrumbs when depth is unavoidable.
+
+## Governance and Naming
+
+- Use naming conventions that:
+  - Scale across organizations and products.
+  - Avoid conflicts or ambiguous names at different levels.
+- Reference IA docs like `design/ia/navigation.*` when present to ensure new structures align with existing ones.
+
+## Anti-patterns
+
+- Do **not** overload a single navigation area with both global and local actions without clear distinction.
+- Do **not** allow destructive, organization-level actions to hide in the same place as low-risk personal preferences.
+- Do **not** create deep, branching structures when flat tags or filters would better support findability.
+

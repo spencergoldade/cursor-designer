@@ -1,0 +1,46 @@
+---
+description: Patterns for using UX research, insights, and experiments to inform design changes.
+alwaysApply: false
+---
+
+# UX Research and Evidence Usage
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when interpreting research findings, connecting them to design decisions, or planning experiments.
+
+## Connect Design to Evidence
+
+- When research or analytics are available, explicitly reference them:
+  - Usability tests, interviews, surveys.
+  - Product analytics, funnels, and drop-off points.
+- Summarize findings in terms of:
+  - **Observed behavior** (what users did).
+  - **Underlying needs** (why they did it).
+  - **Opportunities** (how design can better support them).
+
+## Working with Research Artifacts
+
+- Look for project docs such as:
+  - `design/research/findings.*` – synthesized research insights.
+  - `design/research/studies/*` – individual study reports.
+  - `design/research/experiments.*` – active or past experiments and their outcomes.
+- When these exist, align proposed changes with:
+  - Documented pain points.
+  - Validated patterns.
+  - Known constraints and success metrics.
+
+## Experimentation
+
+- When uncertainty is high, prefer **small, testable changes** over large speculative redesigns.
+- Clearly outline:
+  - The **hypothesis** (what you expect to improve and why).
+  - The **metric** (how you will know it worked).
+  - The **scope** (which users, pages, or flows are affected).
+
+## Anti-patterns
+
+- Do **not** ignore existing research summaries when they are available.
+- Do **not** cherry-pick evidence to justify a predetermined solution; look for contradictory signals.
+- Do **not** treat research as one-off; document new learnings back into research artifacts when possible.
+

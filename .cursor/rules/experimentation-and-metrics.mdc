@@ -1,0 +1,47 @@
+---
+description: Use when planning or evaluating experiments, A/B tests, or UX metrics. Covers hypotheses, success metrics, and interpretation.
+alwaysApply: false
+---
+
+# Experimentation and Metrics (Agent-Requested)
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this binder when designing experiments, defining UX metrics, or interpreting results for product changes.
+
+## Hypotheses and Goals
+
+- Formulate clear hypotheses in the format:
+  - “If we change **X** for **Y users**, we expect **Z metric** to move in **this direction** because **reason**.”
+- Tie hypotheses directly to:
+  - Observed user problems or friction in research.
+  - Product or business goals.
+
+## Metrics and Measurement
+
+- Choose metrics that reflect **user value** and behavior, not just internal convenience:
+  - Task completion rate, time to complete, error rate.
+  - Activation, retention, or satisfaction scores where relevant.
+- Avoid relying on a single metric; pair **leading** (behavioral) and **lagging** (outcomes) indicators where possible.
+
+## Experiment Design
+
+- Keep experiments as **small and focused** as possible to reduce confounding variables.
+- Document:
+  - Target population or segments.
+  - Duration and expected sample size.
+  - Guardrail metrics (what must not get worse).
+
+## Interpretation and Decisions
+
+- When analyzing results, consider:
+  - Statistical and practical significance.
+  - Potential biases or data quality issues.
+- Translate findings into **concrete design or product decisions** and update research or design docs (for example, `design/research/experiments.*`).
+
+## Anti-patterns
+
+- Do **not** declare success based solely on vanity metrics (for example, page views) when they do not reflect user value.
+- Do **not** run large, multi-change experiments where it is impossible to connect outcomes to specific design decisions.
+- Do **not** ignore negative or inconclusive results; treat them as learning and update docs accordingly.
+

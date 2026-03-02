@@ -1,0 +1,47 @@
+---
+description: Component anatomy and interaction state patterns for frontend UI components.
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# UI Components and States
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this when creating or modifying interactive UI components (buttons, inputs, lists, cards, dialogs, etc.).
+
+## Purpose
+
+Ensure every component has clearly defined states, behaviors, and semantics, so users always know what is interactive, what is happening, and what went wrong.
+
+## Component Anatomy
+
+- Clearly separate:
+  - **Container** (layout, spacing, background).
+  - **Content** (label, icon, description).
+  - **Interaction affordances** (click/tap targets, focus rings, hover states).
+- Each component should have a **single primary action**; secondary actions must look and read as secondary.
+
+## Required States
+
+For any interactive component, explicitly handle at least:
+
+- **Default** – idle, ready for interaction.
+- **Hover / focus** – indicates interactivity and current focus target.
+- **Active / pressed** – clear feedback when the user is taking action.
+- **Disabled** – visibly non-interactive, with appropriate semantics.
+- **Loading** – skeleton, spinner, or inline indicator when work is in progress.
+- **Error** – clear, actionable messaging connected to the component or region.
+
+## Lists, Tables, and Collections
+
+- Provide clear **empty states** that explain what the user can do next.
+- For long-running fetches, prefer **skeletons** or inline loaders near the affected area.
+- Keep **row and card click targets generous**; avoid tiny tap areas for primary actions.
+
+## Anti-patterns
+
+- Do **not** create components with invisible focus or hover states; users must be able to see what is interactive.
+- Do **not** mix destructive and safe actions without clear differentiation (color, label, and grouping).
+- Do **not** hide critical errors behind generic toasts; connect error messaging to the exact component or region involved.
+

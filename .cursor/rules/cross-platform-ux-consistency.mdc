@@ -1,0 +1,39 @@
+---
+description: Use when aligning experiences across web, mobile, and other platforms. Covers consistency, adaptation, and cross-platform navigation/flows.
+alwaysApply: false
+---
+
+# Cross-Platform UX Consistency (Agent-Requested)
+
+Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+Use this binder when designing or updating experiences that exist across web, mobile, or other platforms.
+
+## Consistency vs Adaptation
+
+- Keep **core concepts, terminology, and mental models consistent** across platforms.
+- Adapt:
+  - Navigation patterns to platform norms (for example, tab bars vs side nav).
+  - Layout density and affordances to device constraints.
+- Document cross-platform expectations in a shared place (for example, `design/ia/navigation.*` and `design/content/voice-and-tone.*`).
+
+## Flows and Wayfinding
+
+- Ensure multi-step flows are recognizable across platforms:
+  - Same steps in the same order, even if grouped differently.
+  - Consistent state names and labels.
+- Provide clear **handoff points** where users may move from one platform to another (for example, email links, deep links).
+
+## Visual and Interaction Language
+
+- Share the same **visual language** and token system where possible (colors, typography roles, iconography).
+- Respect platform-specific interaction patterns:
+  - Gestures and shortcuts on mobile.
+  - Keyboard and pointer conventions on desktop.
+
+## Anti-patterns
+
+- Do **not** rename core concepts between platforms without a compelling, documented reason.
+- Do **not** create entirely different flows for the same task on different platforms unless constraints demand it, and document why.
+- Do **not** ignore platform accessibility needs (for example, larger touch targets on mobile, keyboard navigation on desktop).
+
