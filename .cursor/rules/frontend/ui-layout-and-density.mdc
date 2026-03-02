@@ -1,12 +1,16 @@
 ---
 description: Layout, spacing, and responsive density patterns for frontend views and components.
-globs: **/*.tsx
+globs: ["**/*.tsx"]
 alwaysApply: false
+category: frontend
+tags: [ux, ui, layout]
 ---
 
 # UI Layout and Density
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+**Beginner-friendly** – start here when you are new to layout and spacing.
 
 Use this when working on view or component layout (React/TSX, or equivalent in your stack).
 For other frameworks (Vue, Svelte, etc.), mirror these principles in your own layout primitives and update the `globs` accordingly.

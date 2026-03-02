@@ -1,11 +1,15 @@
 ---
 description: Constraints on how Cursor should behave when designing and implementing UX, UI, IA, and accessibility patterns.
 alwaysApply: true
+category: core
+tags: [ux, ui, ia, accessibility, behavior]
 ---
 
 # Cursor Behavior Constraints for Design Work
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+**Beginner-friendly** – these constraints are always-on guardrails that keep Cursor from doing surprising or low-quality design work.
 
 These rules define what the assistant should and should not do across all design-related tasks.
 
@@ -33,7 +37,7 @@ These rules define what the assistant should and should not do across all design
 - When these files exist, **read and follow them explicitly**, citing the relevant sections where helpful.
 - When they do not exist, offer to:
   - Propose **minimal starter templates** for these files.
-  - Place them in the conventional paths above.
+  - Place them in the conventional paths above (you can start from the `.example` templates under `design/` when they are present).
   - Use these files as the single source of truth going forward.
 
 ## Scope and Focus of Rules

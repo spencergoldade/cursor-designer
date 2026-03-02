@@ -1,14 +1,20 @@
 ---
 description: Frontend accessibility patterns for interactive components, structure, and focus.
-globs: **/*.tsx
+globs: ["**/*.tsx"]
 alwaysApply: false
+category: frontend
+tags: [accessibility, frontend]
 ---
 
 # Accessibility – Frontend
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
 
+**Beginner-friendly** – start here to make sure basic keyboard and screen-reader needs are covered.
+
 Use this when working on frontend components or views that users interact with via mouse, touch, or keyboard.
+
+**Relationship to other a11y guidance:** Principles (WCAG target, keyboard, semantics) are in `.cursor/rules/core/design-core.mdc`. This file defines frontend implementation. QA checklists that reference accessibility are in `.cursor/rules/binders/design-quality-testing.mdc`.
 
 ## Core Accessibility Targets
 

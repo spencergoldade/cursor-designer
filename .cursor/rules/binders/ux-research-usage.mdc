@@ -1,13 +1,17 @@
 ---
 description: Patterns for using UX research, insights, and experiments to inform design changes.
 alwaysApply: false
+category: binder
+tags: [ux, research]
 ---
 
 # UX Research and Evidence Usage
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
 
-Use this when interpreting research findings, connecting them to design decisions, or planning experiments.
+**Intermediate** – use this when you have research findings or analytics and want to connect them to design decisions.
+
+Use this when interpreting research findings, connecting them to design decisions, or planning experiments. When `design/*` docs exist (e.g. `design/research/findings.*`, `design/tokens/*`, `design/ia/navigation.*`), follow them; this binder adds process for using research and evidence.
 
 ## Connect Design to Evidence
 

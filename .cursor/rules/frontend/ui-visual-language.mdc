@@ -1,7 +1,9 @@
 ---
 description: Visual language patterns for color, typography, elevation, and iconography using design tokens.
-globs: **/*.tsx
+globs: ["**/*.tsx"]
 alwaysApply: false
+category: frontend
+tags: [ui, visual, tokens]
 ---
 
 # UI Visual Language and Tokens
@@ -16,7 +18,7 @@ Use this when working on the visual styling of components and views: color, typo
   - `design/tokens/colors.*` – color tokens and semantic roles.
   - `design/tokens/typography.*` – typography scale, line heights, and weights.
   - `design/tokens/spacing.*` – spacing scales for layout and components.
-- When these files do not exist, propose **minimal starter tokens** and place them in these paths, then use them consistently.
+- When these files do not exist, propose **minimal starter tokens** and place them in these paths, then use them consistently. You can copy and adapt the example templates in `design/tokens/*.example.md` as a starting point.
 
 ## Color Usage
 

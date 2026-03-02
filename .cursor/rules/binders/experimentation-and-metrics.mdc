@@ -1,13 +1,17 @@
 ---
 description: Use when planning or evaluating experiments, A/B tests, or UX metrics. Covers hypotheses, success metrics, and interpretation.
 alwaysApply: false
+category: binder
+tags: [experimentation, metrics]
 ---
 
 # Experimentation and Metrics (Agent-Requested)
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
 
-Use this binder when designing experiments, defining UX metrics, or interpreting results for product changes.
+**Advanced** – ignore this until you are planning experiments or measuring UX changes.
+
+Use this binder when designing experiments, defining UX metrics, or interpreting results for product changes. When `design/*` docs exist (e.g. `design/research/experiments.*`, `design/tokens/*`), align with them; this binder adds process for hypotheses, metrics, and interpretation.
 
 ## Hypotheses and Goals
 

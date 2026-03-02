@@ -1,14 +1,18 @@
 ---
 description: UX writing and microcopy patterns for labels, messages, and in-product text.
-globs: **/*.tsx
+globs: ["**/*.tsx"]
 alwaysApply: false
+category: frontend
+tags: [ux, content, writing]
 ---
 
 # UX Writing and Microcopy
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
 
-Use this when naming actions, writing messages, or shaping any in-product copy.
+**Intermediate** – use this when you are naming actions, writing copy, or improving in-product messages.
+
+Use this when naming actions, writing messages, or shaping any in-product copy. **This file is the primary source of truth for microcopy patterns and guidelines.** Brand-specific voice and tone live in `design/content/voice-and-tone.*` (copy from `design/content/voice-and-tone.example.md` and customize).
 
 ## Voice and Tone
 

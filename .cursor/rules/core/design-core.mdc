@@ -1,11 +1,15 @@
 ---
 description: Balanced always-on core of UX, UI, IA, and accessibility principles for every interaction.
 alwaysApply: true
+category: core
+tags: [ux, ui, ia, accessibility]
 ---
 
 # Design Core – Always-On Principles
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+**Beginner-friendly** – this is a small, always-on set of principles that is safe to enable in every project.
 
 These principles apply to every task, regardless of stack, feature, or platform. They describe **how to build** high-quality experiences, not which features to build.
 
@@ -32,11 +36,15 @@ These principles apply to every task, regardless of stack, feature, or platform.
 - Use **consistent, noun-based labels** in the present tense; avoid cleverness and internal jargon.
 - Keep core navigation structures **predictable and stable**; avoid moving primary actions between views without strong reason.
 
+For implementation rules and patterns, see `.cursor/rules/frontend/ia-navigation-and-structure.mdc`. For your product’s sitemap and naming, use `design/ia/navigation.*` (see `design/ia/navigation.example.md` as a template).
+
 ## Accessibility
 
 - Target **WCAG 2.1 AA or better** as a default, even if not explicitly requested.
 - Ensure that all key paths are **keyboard accessible**, with visible focus states and no keyboard traps.
 - Prefer **semantic structure** (headings, lists, landmarks) over purely visual positioning.
+
+For implementation (ARIA, keyboard patterns, focus management), see `.cursor/rules/frontend/accessibility-frontend.mdc`.
 
 ## Behavior When Trade-offs Arise
 

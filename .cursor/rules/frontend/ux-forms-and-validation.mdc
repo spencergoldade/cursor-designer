@@ -1,12 +1,16 @@
 ---
 description: Form, validation, and error handling patterns focused on clarity and recovery.
-globs: **/*.tsx
+globs: ["**/*.tsx"]
 alwaysApply: false
+category: frontend
+tags: [ux, forms, validation]
 ---
 
 # UX Forms and Validation
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+**Beginner-friendly** – start here when you are working on forms, inputs, and validation.
 
 Use this when designing or updating forms, wizards, and input-heavy flows.
 
@@ -24,6 +28,8 @@ Use this when designing or updating forms, wizards, and input-heavy flows.
   - **Contextual** – attach errors to fields or regions rather than only showing a global message.
 - Where possible, **preserve user input** and pre-fill fields when retrying to prevent rework.
 
+For tone and phrasing of errors and general microcopy patterns, see `.cursor/rules/frontend/ux-writing-and-microcopy.mdc` and `design/content/voice-and-tone.*`.
+
 ## Form Layout and Flow
 
 - Group related fields into clear sections with headings and helper text when needed.
@@ -35,6 +41,6 @@ Use this when designing or updating forms, wizards, and input-heavy flows.
 ## Anti-patterns
 
 - Do **not** clear the entire form when a single field fails validation.
-- Do **not** rely solely on red color or subtle icons to communicate errors; pair with descriptive text.
+- Do **not** rely solely on red color or subtle icons to communicate errors; pair with descriptive text. For form-specific accessibility (labels, focus, screen readers), see `.cursor/rules/frontend/accessibility-frontend.mdc`.
 - Do **not** hide mandatory fields or requirements until after users encounter errors; state key requirements upfront.
 

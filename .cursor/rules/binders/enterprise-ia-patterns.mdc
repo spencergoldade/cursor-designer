@@ -1,13 +1,17 @@
 ---
 description: Use for complex, multi-product or multi-tenant IA. Covers cross-product navigation, deep hierarchies, account/org structures, and wayfinding at scale.
 alwaysApply: false
+category: binder
+tags: [ia, enterprise]
 ---
 
 # Enterprise IA Patterns (Agent-Requested)
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
 
-Use this binder when designing IA for multi-product, multi-tenant, or large enterprise environments.
+**Advanced** – ignore this until you are working on multi-tenant or multi-product enterprise IA.
+
+Use this binder when designing IA for multi-product, multi-tenant, or large enterprise environments. When `design/ia/navigation.*` or other IA docs exist, align new structures with them; this binder adds enterprise-scale patterns (multi-level, cross-product nav, deep hierarchies).
 
 ## Multi-Level Structures
 

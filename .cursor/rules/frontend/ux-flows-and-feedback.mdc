@@ -1,12 +1,16 @@
 ---
 description: UX flow, system status, and feedback patterns for user journeys and interactions.
-globs: **/*.tsx
+globs: ["**/*.tsx"]
 alwaysApply: false
+category: frontend
+tags: [ux, flows, feedback]
 ---
 
 # UX Flows and Feedback
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
+
+**Intermediate** – use this after you are comfortable with individual screens and want to design multi-step flows and feedback.
 
 Use this when designing or modifying flows (onboarding, checkout, configuration, CRUD flows, etc.) and the feedback they provide.
 

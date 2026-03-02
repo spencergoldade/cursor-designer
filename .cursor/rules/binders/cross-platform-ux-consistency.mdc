@@ -1,13 +1,17 @@
 ---
 description: Use when aligning experiences across web, mobile, and other platforms. Covers consistency, adaptation, and cross-platform navigation/flows.
 alwaysApply: false
+category: binder
+tags: [ux, cross-platform]
 ---
 
 # Cross-Platform UX Consistency (Agent-Requested)
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
 
-Use this binder when designing or updating experiences that exist across web, mobile, or other platforms.
+**Advanced** – ignore this until you are designing flows that exist across web, mobile, or multiple platforms.
+
+Use this binder when designing or updating experiences that exist across web, mobile, or other platforms. When `design/*` docs exist (e.g. `design/ia/navigation.*`, `design/content/voice-and-tone.*`, `design/tokens/*`), follow them for shared language and structure; this binder adds cross-platform consistency and adaptation patterns.
 
 ## Consistency vs Adaptation
 

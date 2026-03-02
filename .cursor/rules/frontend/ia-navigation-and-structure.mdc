@@ -1,14 +1,20 @@
 ---
 description: Information architecture patterns for navigation, structure, and labeling.
-globs: **/*.tsx
+globs: ["**/*.tsx"]
 alwaysApply: false
+category: frontend
+tags: [ia, navigation, structure]
 ---
 
 # IA – Navigation and Structure
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
 
+**Intermediate** – use this when you are shaping navigation, menus, and overall structure beyond a single page.
+
 Use this when designing navigation, menus, sitemaps, and content hierarchy.
+
+**Relationship to other IA guidance:** High-level principles live in `.cursor/rules/core/design-core.mdc`. Your product’s sitemap and section names live in `design/ia/navigation.*` (copy from `design/ia/navigation.example.md` and customize). This file defines frontend implementation patterns that apply those principles.
 
 ## IA Fundamentals
 

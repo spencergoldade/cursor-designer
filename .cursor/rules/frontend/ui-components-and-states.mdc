@@ -1,7 +1,9 @@
 ---
 description: Component anatomy and interaction state patterns for frontend UI components.
-globs: **/*.tsx
+globs: ["**/*.tsx"]
 alwaysApply: false
+category: frontend
+tags: [ux, ui, components]
 ---
 
 # UI Components and States

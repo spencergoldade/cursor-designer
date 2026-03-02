@@ -1,13 +1,17 @@
 ---
 description: Use when working on authentication, authorization, account security, or other security-sensitive UX flows. Covers secure sign-in, recovery, permission UI, and security messaging.
 alwaysApply: false
+category: binder
+tags: [security, ux]
 ---
 
 # Security UX Patterns (Agent-Requested)
 
 Rules curated by **Spencer Goldade (spencergoldade.ca)**.
 
-Use this binder when you are implementing or modifying auth flows, permissions, account recovery, or any security-sensitive UI.
+**Advanced** – ignore this until you are working on authentication, permissions, or other security-sensitive flows.
+
+Use this binder when you are implementing or modifying auth flows, permissions, account recovery, or any security-sensitive UI. When `design/content/voice-and-tone.*` exists, use it for security messaging tone; this binder adds security-specific patterns (sign-in, recovery, permissions, messaging).
 
 ## Secure Sign-in and Recovery
 
