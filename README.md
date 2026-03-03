@@ -4,6 +4,9 @@ This repo provides a **design-first Cursor rules template** that helps the AI ma
 
 Rules are curated by **Spencer Goldade ([spencergoldade.ca](https://spencergoldade.ca))**.
 
+[![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/spencerg1350)
+
+**Support this project on [Ko-fi](https://ko-fi.com/spencerg1350)!**
 
 ## Table of Contents
 
@@ -284,4 +287,4 @@ In plain language:
 
 For private or internal projects, you can generally copy these rules into your repo as long as you respect the GPLv3 terms. Consult your own legal counsel if you are unsure how GPLv3 applies to your use case.
 
-When adapting these rules, please retain credit to **Spencer Goldade ([spencergoldade.ca](https://spencergoldade.ca))** and add your own names as co-curators where appropriate.
+When adapting these rules, please retain credit to **Spencer Goldade ([spencergoldade.ca](https://spencergoldade.ca))** and add your own names as co-curators where appropriate. If this has been useful, you can [support my work on Ko-fi](https://ko-fi.com/spencerg1350).
